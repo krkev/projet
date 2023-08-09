@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.container{
+    margin: 30%;
+    position: relative;
+  
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 180px;
+    height: 250px;
+    background-image: linear-gradient(150deg, gray 0%, black 50%);
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.23);
+    border-radius: 15px;
+}
+.container span{
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    top: -10px;
+    left: -70px;
+    display: flex;
+    align-items: center;
+   
+}
+.container span::before{
+       content: 'premium';
+       position: absolute;
+     
+       width: 150%;
+       height: 40px;
+       background-image: linear-gradient(45deg, red 0%, yellow 50%, red 100%);
+       transform: rotate(-45deg);
+}  
+</style>
+
+<body>
+    <div class="container">
+        <div class="card"></div>
+        <span></span>
+    </div>
+</body>
+</html>
